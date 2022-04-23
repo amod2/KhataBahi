@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="@string/Home"
+        android:icon="@drawable/ic_baseline_home"/>
+    <item android:id="@+id/record"
+        android:title="@string/record"
+        android:icon="@drawable/ic_baseline_view_list"/>
+    <item android:id="@+id/addEntry"
+        android:title="@string/AddNew"
+        android:icon="@drawable/ic_baseline_note"/>
+
+    <item android:id="@+id/setting"
+        android:title="@string/Setting"
+        android:icon="@drawable/ic_baseline_settings"/>
+</menu>
