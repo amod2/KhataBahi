@@ -1,77 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/business"
+    android:padding="20dp"
+    android:layout_gravity="center"
     tools:context=".sign_up">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="253dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="196dp"
-        android:ems="10"
-        android:hint="Enter Shop Name"
-        android:inputType="textPersonName"
-        android:textColorHint="#F1EAEA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Setup your shop"
+        android:textColor="#121CD6"
+        android:textSize="25dp" />
 
     <EditText
-        android:id="@+id/ph"
-        android:layout_width="252dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Phone no."
-        android:inputType="textPersonName"
-        android:textColorHint="#F6EDED"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="396dp"
+        android:hint="Enter shop name"
+        android:textColor="#DCCBCB"
+        android:textColorHint="#F4CDCD"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="255dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Choose Password"
-        android:inputType="textPassword"
-        android:textColorHint="#F6F0F0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ph" />
+        android:id="@+id/shop_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="317dp"
+        android:hint="address"
+        android:textColorHint="#F4CDCD"
+        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/snp"
-        android:layout_width="253dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="28dp"
-        android:text="Sign Up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        android:id="@+id/add_shop"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="248dp"
+        android:text="Add your shop"
+        app:backgroundTint="#E91E63" />
 
-    <TextView
-        android:id="@+id/dfgdfg"
-        android:layout_width="260dp"
-        android:layout_height="72dp"
-        android:gravity="center"
-        android:text="Sign Up"
-        android:textColor="#9C27B0"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

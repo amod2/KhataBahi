@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 public class database extends SQLiteOpenHelper {
 
-    protected static  String dbname = "bahikhata_database.db";
+    protected static  String dbname = "bahi_database.db";
     public database(@Nullable Context context) {
         super(context, dbname, null, 1);
     }
@@ -21,14 +21,17 @@ public class database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String q = "create table udhari_tbl(id integer  primary key autoincrement,name text,amount int,address text,phone text,date text,status text,date_stamp text,description text,img BLOB)";
         String q2="create table image_tbl(id integer primary key autoincrement,img BLOB)";
+        String q3="create table shop_desc(s_name text,s_address text,s_profile BLOB)";
         sqLiteDatabase.execSQL(q);
         sqLiteDatabase.execSQL(q2);
+        sqLiteDatabase.execSQL(q3);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("drop table if exists udhari_tbl");
         sqLiteDatabase.execSQL("drop table if exists image_tbl");
+        sqLiteDatabase.execSQL("drop table if exists shop_desc");
         onCreate(sqLiteDatabase);
     }
 
@@ -72,6 +75,32 @@ public class database extends SQLiteOpenHelper {
             return false;
         else
             return true;
+    }
+    public boolean insert_shopData(String name,String address,byte[] profile){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues c=new ContentValues();
+        c.put("s_name",name);
+        c.put("s_address",address);
+        c.put("s_profile",profile);
+        long r=db.insert("shop_desc",null,c);
+        if(r==-1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public boolean checkShopIsRegistered(){
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from shop_desc",null);
+        if(cursor.getCount() >0){
+            return true;
+        }else
+            return false;
+    }
+    public Cursor getShopDetails(){
+        SQLiteDatabase db=this.getReadableDatabase();
+        Cursor cursor=db.rawQuery("select * from shop_desc",null);
+        return cursor;
     }
     public Cursor getCursorData (){
         SQLiteDatabase DB = this.getWritableDatabase();

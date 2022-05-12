@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
         TextView unpaidV=view.findViewById(R.id.unpaid_udhari);
         TextView allV=view.findViewById(R.id.total_udhari);
         TextView paidV=view.findViewById(R.id.paid_udhari);
+
         paidV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
