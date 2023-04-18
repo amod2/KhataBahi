@@ -36,7 +36,7 @@
             android:layout_height="30dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Enter master key"
+            android:text="Enter Pay Id"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/master_key"

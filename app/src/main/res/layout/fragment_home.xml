@@ -10,14 +10,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/busi" >
+        android:background="#F14A4A" >
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="313dp"
             android:layout_height="70dp"
             android:text="Welcome to Dashboard"
-            android:textColor="#09DD11"
+            android:textColor="#E0EAE1"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,9 +29,9 @@
             android:id="@+id/textView12"
             android:layout_width="223dp"
             android:layout_height="42dp"
-            android:text="Customers"
-            android:textColor="#05DF09"
-            android:textSize="24sp"
+            android:text="ग्राहक संख्या"
+            android:textColor="#EDAF11"
+            android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.085"
@@ -119,9 +119,9 @@
             android:id="@+id/textView8"
             android:layout_width="221dp"
             android:layout_height="37dp"
-            android:text="Credits"
-            android:textColor="#05F40F"
-            android:textSize="24sp"
+            android:text="उधारी सूची"
+            android:textColor="#EDAF11"
+            android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.105"

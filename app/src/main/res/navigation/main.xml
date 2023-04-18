@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/home"
-        android:name="com.example.navigationdrawer.HomeFragment"
+        android:name="com.test.ebahi.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/setting"
-        android:name="com.example.navigationdrawer.SettingFragment"
+        android:name="com.test.ebahi.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/addEntry"
-        android:name="com.example.navigationdrawer.add_udhari"
+        android:name="com.test.ebahi.add_udhari"
         android:label="fragment_add_udhari"
         tools:layout="@layout/fragment_add_udhari" />
     <fragment
         android:id="@+id/record"
-        android:name="com.example.navigationdrawer.SeeAllFragment"
+        android:name="com.test.ebahi.SeeAllFragment"
         android:label="fragment_see_all"
         tools:layout="@layout/fragment_see_all" />
 

@@ -11,22 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NavigationDrawer">
-        <activity android:name=".sign_up"></activity>
-        <activity android:name=".easybahi"></activity>
-        <activity android:name=".splaceScreen">
+        <activity android:name="com.test.ebahi.sign_up" />
+        <activity android:name="com.test.ebahi.easybahi" />
+        <activity
+            android:name="com.test.ebahi.splaceScreen"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PhotoView" />
-        <activity android:name=".Login" />
-        <activity android:name=".all_record" />
-        <activity android:name=".paid" />
-        <activity android:name=".unpaid" />
-        <activity android:name=".udhar_info" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.test.ebahi.PhotoView" />
+        <activity android:name="com.test.ebahi.Login" />
+        <activity android:name="com.test.ebahi.all_record" />
+        <activity android:name="com.test.ebahi.paid" />
+        <activity android:name="com.test.ebahi.unpaid" />
+        <activity android:name="com.test.ebahi.udhar_info" />
+        <activity android:name="com.test.ebahi.MainActivity" />
     </application>
 
 </manifest>
